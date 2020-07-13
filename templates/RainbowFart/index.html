@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BoXiaoHappyClub</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/all.min.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+
+</head>
+<body>
+	<div class="container my-5 col-xl-4">
+		<div class="card">
+			<div class="card-header text-center">
+				<i class="far fa-thumbs-up"></i><b class="mx-1">给啵赞的彩虹屁</b><i class="far fa-hand-peace"></i>
+			</div>
+			<div class="card-body text-center">
+				<button type="button" class="btn btn-outline-success mr-2 my-2" id="motorcycle"><i class="fas fa-motorcycle mx-4 fa-2x"></i></button>
+				<button type="button" class="btn btn-outline-danger ml-2 my-2" id="bicycle"><i class="fas fa-bicycle mx-4 fa-2x"></i></button>
+				<textarea class="col-12 my-4 border-0 text-center" id="show_Text" rows=3 readonly></textarea>
+				<div class="alert collapse" role="alert" id="alert_Info"></div>
+				<!--<textarea id="auxiliary" hidden readonly></textarea>
+				<span type="button" class="badge badge-pill badge-warning my-2" data-toggle="tooltip" data-placement="bottom" title="打分"><i class="fas fa-bahai fa-2x m-1"></i></span>-->
+				<span type="button" class="badge badge-pill badge-warning mt-2 mb-4" data-toggle="tooltip" data-placement="bottom" title="复制" id="copy_Btn"><i class="far fa-clone fa-2x m-1"></i></span>
+				<span type="button" class="badge badge-pill badge-warning mt-2 mb-4" data-toggle="tooltip" data-placement="bottom" title="NEXT" id="next_Btn"><i class="fas fa-angle-double-right fa-2x m-1"></i></span>
+				<div class="input-group mt-2 mb-4">
+					<div class="input-group-prepend">
+						<span class="input-group-text alert-success">随<br>便<br>玩<br>玩</span>
+					</div>
+					<textarea class="form-control" id="emotion_Analyze" rows="4"></textarea>
+					<div class="input-group-append">
+						<button class="btn btn-danger alert-danger" type="button" data-toggle="collapse" data-target="#show_Emotion" aria-expanded="false" aria-controls="show_Emotion" id="analyze_Btn">开<br>始<br>分<br>析</button>
+					</div>
+				</div>
+				<div class="collapse" id="show_Emotion">
+					<div class="card card-body border-0" id="emotion_Result">
+						
+					</div>
+				</div>
+			</div>
+			<div class="card-footer text-center text-muted">
+				<small><i class="far fa-copyright mr-1"></i>All For BoXiao</small>
+			</div>
+		</div>
+	</div>
+
+<script type="text/javascript" src="{% static 'js/jquery-3.5.1.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/popper.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/index.js' %}"></script>
+</body>
+</html>
